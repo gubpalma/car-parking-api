@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture.AutoMoq" Version="4.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Car.Parking.Domain\Car.Parking.Domain.csproj" />
+    <ProjectReference Include="..\Car.Parking.Infrastructure.Pricing\Car.Parking.Infrastructure.Pricing.csproj" />
+    <ProjectReference Include="..\Car.Parking.Interfaces\Car.Parking.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
